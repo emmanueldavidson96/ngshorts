@@ -1,0 +1,129 @@
+import { StyleSheet } from "react-native";
+import { COLORS } from "../constants/Colors";
+
+export const styles = StyleSheet.create({
+    container:{
+        flexGrow:1,
+        backgroundColor:COLORS.background,
+        padding:16,
+        alignItems:"center",
+        justifyContent:"center",
+        position:'relative'
+    },
+    imagesContainer:{
+        height:"60%",
+        width:"100%",
+        overflow:"hidden",
+        position:"absolute",
+        top:0,
+        left:0,
+        right:0,
+    },
+    content:{
+        position:"absolute",
+        display:"flex",
+        flexDirection:"column",
+        gap:10,
+        bottom:20,
+        left:0,
+        right:0,
+        
+    },
+    imageOne:{
+        width:100,
+        height:200,
+        borderRadius:50,
+        position: "absolute",
+        left:"2%",
+        top:"2%"     
+    },
+
+    imageTwo:{
+        width:100,
+        height:200,
+        borderRadius:50,
+        position: "absolute",
+        top:"20%",
+        left:"40%",
+    },
+    imageThird:{
+        width:100,
+        height:200,
+        borderRadius:50,
+        position: "absolute",
+        top:"2%",
+        right:"1%",
+    },
+    imageFour:{
+        width:100,
+        height:200,
+        borderRadius:50,
+        position: "absolute",
+        bottom:"-5%",
+        right:"-1%",
+    },
+    imageFive:{
+        width:100,
+        height:200,
+        borderRadius:50,
+        position: "absolute",
+        bottom:"2%",
+        left:"5%",
+    },
+    welcomeText:{
+        width:"80%",
+        padding:6,
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center",
+        alignSelf:"center",
+    },
+    welcomeTextContent:{
+        color:COLORS.primary,
+        fontSize:15,
+        fontWeight:900,
+        letterSpacing:1,
+        textTransform:"uppercase"      
+    },
+    tagText:{
+        width:"80%",
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center",
+        alignSelf:"center",
+    },
+    tagTextContent:{
+        color:COLORS.primary,
+        fontSize:25,
+        fontWeight:"200",
+        textAlign:"center",
+        fontStyle:"italic"
+    },
+    siteText:{
+        width:"90%",
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center",
+        alignSelf:"center",
+    },
+    siteTextContent:{
+        color:COLORS.primary,
+        fontSize:12,
+        textAlign:"center"
+    },
+    button:{
+        width:"80%",
+        height:50,
+        padding:6,
+        backgroundColor:"#4CAF50",
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center",
+        borderRadius:40,
+        alignSelf:"center",
+        marginTop:40
+    },
+    buttonContent:{
+        color:COLORS.white
+    }
+})

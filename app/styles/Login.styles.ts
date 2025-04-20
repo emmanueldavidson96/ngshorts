@@ -1,0 +1,123 @@
+import { COLORS } from "../constants/Colors";
+import {StyleSheet} from "react-native";
+
+export const styles = StyleSheet.create({
+    container:{
+        flexGrow:1,
+        backgroundColor:COLORS.background,
+        padding:16,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    scrollViewStyle:{
+        flex:1,
+        backgroundColor:COLORS.background,
+    },
+    card:{
+        borderRadius:16,
+        padding: 20,
+        marginVertical:16,
+        shadowColor:COLORS.black,
+        shadowOffset:{width:0, height:2},
+        shadowOpacity:0.1,
+        shadowRadius:8,
+        elevation:3,
+        borderWidth:1,
+        borderColor:COLORS.border,
+        width:"90%"
+    },
+    headers:{
+        alignItems:"center",
+        marginBottom:24,
+    },
+    title:{
+        fontSize:24,
+        fontWeight:"700",
+        color:COLORS.textPrimary,
+        marginBottom:8
+    },
+    subtitle:{
+        fontSize:14,
+        color:COLORS.textSecondary,
+        textAlign:"center"
+    },
+    form:{
+        marginBottom: 16,
+    },
+    topIllustration:{
+        display: "flex",
+        flexDirection:"column",
+        gap:"10px"
+    },
+    illustrationImage:{
+        width:250,
+        height:250,
+    },
+    inputGroup:{
+        display:"flex",
+        flexDirection:"column",
+        gap:10
+    },
+    label:{
+        fontSize:12,
+        color:COLORS.textPrimary,
+        fontWeight:800,
+    },
+    inputContainer:{
+        display:"flex",
+        backgroundColor:"#f7f2ea",
+        position:"relative",
+        shadowColor:COLORS.black,
+        shadowOffset:{width:0, height:2},
+        shadowOpacity:0.1,
+        shadowRadius:8,
+        elevation:3,
+        borderRadius:5,
+        padding:3
+    },
+    inputIcon:{
+        width:40,
+        height:40,
+        position:"absolute"
+    },
+    input:{
+        width:"100%",
+        height:40,
+        fontSize:11,
+    },
+    formContainer:{
+        width:"100%",
+        display:"flex",
+        flexDirection:"column",
+        gap:20
+    },
+    button:{
+        backgroundColor:COLORS.backgroundColors,
+        width:"100%",
+        height:50,
+        padding:5,
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center",
+        borderRadius:5
+    },
+    buttonText:{
+        color:COLORS.white,    
+        fontSize:15    
+    },
+    footer:{
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center",
+        gap:20
+    },
+    footerText:{
+        fontSize:12,
+        color:COLORS.textPrimary,
+    },
+    link:{
+        color:COLORS.textSecondary,
+        fontWeight:800,
+    }
+
+})
