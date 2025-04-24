@@ -7,10 +7,10 @@ import { useEffect } from "react";
 
 export default function RootLayout() {
   const segments = useSegments();
-  // const user = {
-  //   name:"Emmanuel"
-  // }
-  const user = null
+  const user = {
+    name:"Emmanuel"
+  }
+  // const user = null
   useEffect(() => {
     const authScreens = segments[0] === "(auth)";
     if(user && segments[0] !== "(tabs)") {
