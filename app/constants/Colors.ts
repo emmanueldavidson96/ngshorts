@@ -5,7 +5,7 @@ export const COLORS = {
     textDark:"",
     placeholderText:"",
     background:"#000000",
-    inputBackground:"",
+    inputBackground:"#ffffff",
     border:"",
     white:"#ffffff",
     black:"#000000",
