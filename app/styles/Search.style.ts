@@ -53,12 +53,10 @@ export const styles = StyleSheet.create({
         borderColor:COLORS.backgroundColors,
         borderWidth:2,
     },
-    feedContainer:{
-        
+    feedContainer:{        
         backgroundColor:COLORS.background,
-        paddingTop: 100,
+        paddingTop: 10,
         width:"100%",
-        height:"100%"
     },
     contentText:{
         color:COLORS.white,
@@ -66,11 +64,10 @@ export const styles = StyleSheet.create({
     },
     feed:{
         display:"flex",
-        flexDirection:"row",
-        gap:20,
+        flexDirection:"column",
+        gap:8,
         width:"100%",
-        paddingBottom:40,
-        paddingTop:30,
+        padding:30,
         borderBottomColor:COLORS.backgroundColors,
         borderBottomWidth:1,
     },
@@ -99,5 +96,70 @@ export const styles = StyleSheet.create({
         fontWeight:"bold",
         color:COLORS.white,
         fontSize:15,
+    },
+    barContainer:{
+        width:"100%",
+        padding:20,
+        alignItems:"center",
+        justifyContent:"center",
+        display:"flex",
+       
+    },
+    exploreTextContainer:{
+        width:"100%",
+        padding:10,
+        alignItems:"center",
+        justifyContent:"center",
+        display:"flex"
+    },
+    exploreText:{
+        fontSize:30,
+        fontWeight:"bold",
+        color:"white"
+    },
+    input:{
+        width:"100%",
+        padding:15,
+        backgroundColor:COLORS.white,
+        color:COLORS.black,
+        borderRadius:20,
+        fontSize:13
+    },
+    headerOption:{
+        width:"100%",
+        display:"flex",
+        justifyContent:"space-between",
+        alignContent:"center",
+        flexDirection:"row",
+    },
+    textOptions:{
+        fontSize:13,
+        color:COLORS.white,
+        paddingBottom:10,
+        paddingLeft:30,
+        paddingRight:30
+        // borderBottomColor:COLORS.textSecondary,
+        // borderBottomWidth:2,
+    },
+    usersImage:{
+        width:"100%",
+        objectFit:"cover",
+        borderRadius:10,
+        height:200
+    },
+    userFullName:{
+        fontSize:16,
+        fontWeight:"bold",
+        color:COLORS.white
+    },
+    userTagName:{
+        fontSize:10,
+        fontWeight:"thin",
+        color:COLORS.white
+    },
+    userDescription:{
+        fontSize:13,
+        fontWeight:"normal",
+        color:COLORS.white
     }
 })

@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
     },
     logo:{
         color:COLORS.white,
-        fontSize:15,
+        fontSize:20,
         fontWeight:"bold",
         marginLeft:50
     },
@@ -53,12 +53,11 @@ export const styles = StyleSheet.create({
         borderColor:COLORS.backgroundColors,
         borderWidth:2,
     },
-    feedContainer:{
-        
+    feedContainer:{        
         backgroundColor:COLORS.background,
         paddingTop: 100,
         width:"100%",
-        height:"100%"
+        paddingBottom:200,
     },
     contentText:{
         color:COLORS.white,
@@ -99,5 +98,25 @@ export const styles = StyleSheet.create({
         fontWeight:"bold",
         color:COLORS.white,
         fontSize:15,
+    },
+    commentContainer:{
+        width:"100%",
+        paddingRight:20,
+        paddingTop:20,
+        display:"flex",
+        flexDirection:"row",
+        justifyContent:"space-between",
+        alignItems:"center"
+    },
+    commentClick:{
+        display:"flex",
+        gap:10,
+        flexDirection:"row",
+        alignItems:"center"
+    },
+    likeClick:{
+        display:"flex",
+        gap:15,
+        flexDirection:"row"
     }
 })

@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import { COLORS } from "../constants/Colors";
-import { Dimensions } from "react-native";
+import { Dimensions } from 'react-native';
 
 export const styles = StyleSheet.create({
     container: {
@@ -116,4 +116,103 @@ export const styles = StyleSheet.create({
         fontWeight:"bold",
         color:"white"
     },
+    input:{
+        width:"100%",
+        padding:15,
+        backgroundColor:COLORS.white,
+        color:COLORS.black,
+        borderRadius:15,
+        fontSize:12
+    },
+    headerOption:{
+        width:"100%",
+        display:"flex",
+        justifyContent:"space-between",
+        alignContent:"center",
+        flexDirection:"row",
+    },
+    tagText:{
+        fontSize:13,
+        fontWeight:"thin",
+        color:COLORS.white,
+    },
+    createpostContainer:{
+        display:"flex",
+        flexDirection:"column",
+        gap:20,
+        padding:10,
+    },
+    formGroup:{
+        width:"100%",
+        display:"flex",
+        flexDirection:"column",
+        gap:5,
+
+    },
+    label:{
+        fontSize:15,
+        fontWeight:"bold",
+        color:COLORS.white,
+    },
+    imagePicker: {
+        width: "100%",
+        height: 200,
+        backgroundColor: COLORS.background || "#fff", // fallback to white
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "row",
+        borderRadius: 10, // rounded corners for nicer look
+
+        // iOS shadow
+        shadowColor: COLORS.textSecondary,
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.2,
+        shadowRadius: 6,
+
+        // Android shadow
+        elevation: 5,
+        marginBottom: 16, // in case it's tucked into another view
+    },
+    previewImage:{
+        width:"100%",
+        height:120,
+        borderRadius:10
+    },
+    placeholderContainer:{
+        width:"100%",
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center",
+        gap:10,
+    },
+    placeholderText:{
+        fontSize:13,
+        color:COLORS.textSecondary,
+    },  
+    inputMainContent: {
+        width: "100%",
+        backgroundColor: COLORS.background || "#fff", // Background color for TextInput itself
+        borderRadius: 10, // Ensure TextInput also has rounded corners
+        padding: 15, // Add padding to give the text inside room to breathe
+        fontSize: 14, // Adjust font size to match design
+        color: COLORS.textPrimary || "#000", // Text color
+        height: 120, // Adjust the height to fit multiple lines
+        borderColor: COLORS.white,
+        borderWidth: 1, // Border around TextInput
+        textAlignVertical: "top", // Ensures text aligns to the top when multiline
+    },
+    submitButton:{
+        width:"100%",
+        height:50,
+        backgroundColor:COLORS.textSecondary,
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center",
+        borderRadius:10
+    },
+    submitText:{
+        color:COLORS.white,
+        fontSize:13
+    }
+
 })
