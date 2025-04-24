@@ -1,16 +1,19 @@
 import { StyleSheet } from "react-native";
 import { COLORS } from "../constants/Colors";
+import { Dimensions } from "react-native";
 
 export const styles = StyleSheet.create({
     container: {
-        backgroundColor: COLORS.background,
-        // padding: 16,
+        flex: 1,
+        minHeight: Dimensions.get("window").height,
+        backgroundColor: COLORS.background || "black",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        position:"relative",
-        zIndex:1000
+        // alignItems: "center",
+        justifyContent: "flex-start", // so content stacks from top
+        position: "relative",
+        zIndex: 1000,
+        padding: 16, // optional if you want internal spacing
     },
     bannerRegion:{
         position: "absolute",
@@ -99,5 +102,18 @@ export const styles = StyleSheet.create({
         fontWeight:"bold",
         color:COLORS.white,
         fontSize:15,
-    }
+    },
+    exploreTextContainer:{
+        width:"100%",
+        padding:10,
+        alignItems:"center",
+        justifyContent:"center",
+        display:"flex",
+        flexDirection:"column"
+    },
+    exploreText:{
+        fontSize:25,
+        fontWeight:"bold",
+        color:"white"
+    },
 })
